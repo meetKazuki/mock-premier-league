@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+
+    "outDir": "./build",
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/*"],
+      "@controllers/*": ["src/api/controllers/*"],
+      "@docs": ["docs/*"],
+      "@middleware/*": ["src/api/middleware/*"],
+      "@routes/*": ["src/api/routes/*"],
+      "@services/*": ["src/services/*"],
+      "@schemas/*": ["src/database/schemas/*"],
+      "@repositories/*": ["src/database/repositories/*"],
+      "@utils/*": ["src/utils/*"],
+      "@tests/*": ["tests/*"]
+    },
+    "typeRoots": ["node_modules/@types", "@types"]
+  },
+  "include": ["@types/**/*.ts", "src/**/*.ts", "tests/**/*.ts"]
+}
