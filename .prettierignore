@@ -5,6 +5,7 @@
 .vscode
 coverage/
 .data/
+build/
 dist/
 node_modules/
 src/config/static/
