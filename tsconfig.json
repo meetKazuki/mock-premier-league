@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strictPropertyInitialization": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
+    "outDir": "./build",
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "moduleResolution": "node",
+
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/*"],
+      "@controllers/*": ["src/api/controllers/*"],
+      "@models/*": ["src/database/models/*"],
+      "@operations/*": ["src/operations/*"],
+      "@repositories/*": ["src/database/repositories/*"],
+      "@routes/*": ["src/api/routes/*"],
+      "@utils/*": ["src/utils/*"],
+
+      "@integration/*": ["test/integration/*"],
+      "@unit/*": ["test/unit/*"],
+      "@data/*": ["test/fixtures/*"],
+      "@test/*": ["test/*"],
+
+      "koa-body": ["@types/koa-body"]
+    },
+    "typeRoots": ["node_modules/@types", "@types"]
+  },
+  "include": ["src", "test", "@types"]
+}
