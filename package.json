@@ -1,0 +1,24 @@
+{
+  "name": "mock-premier-league",
+  "version": "1.0.0",
+  "description": "An API that serves the latest scores of fixtures of matches in a “Mock Premier League”.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meetKazuki/mock-premier-league.git"
+  },
+  "keywords": [
+    "node.js",
+    "typescript",
+    "heroku"
+  ],
+  "author": "Desmond Edem <desmond.edem@strv.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meetKazuki/mock-premier-league/issues"
+  },
+  "homepage": "https://github.com/meetKazuki/mock-premier-league#readme"
+}
